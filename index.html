@@ -22,21 +22,50 @@
             <label for="fz">Font size</label>
 <br>
 <br>
-            <select name="fz" id="fz">
-                <option value="20">20</option>
-                <option value="24">24</option>
-                <option value="28">28</option>
-                <option value="30">30</option>
+            <select name="fz" id="fz" onclick="changeFont()">
+                <option value="20px">20</option>
+                <option value="24px">24</option>
+                <option value="28px">28</option>
+                <option value="30px">30</option>
             </select>
             <br><br>
-            <label for="fc">Font Color</label><br><br>
+            <label for="fc">Paragraph Color</label><br><br>
             <select name="fc" id="fc" onclick="changeParaColor()">
                 <option value="red"> Red </option>
                 <option value="green"> Green </option>
                 <option value="Yellow" > Yellow</option>
                 <option value="Blue"> Blue </option>
             </select>
-    
+            <br>
+            <br>
+            <label for="fonts">Font-Family</label> <br>
+            <select name="fonts" id="fonts" onclick="changeFontFamily()">
+                <option value="Arial">Arial</option>
+                <option value="Helvatica">Helvatica</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="Franklin">Frankiln</option>
+                <option value="Geneva">Geneva</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <br>
+            <br>
+            <label for="pad">Padding</label><br>
+            <select name="pad" id="pad" onclick="changePadding()">
+                <option value="20px">20</option>
+                <option value="30px">30</option>
+                <option value="40px">40</option>
+                <option value="50px">50</option>
+            </select>
+            <br>
+            <br>
+            <label for="marg">Margin</label>
+            <select name="marg" id="marg" onclick="changeMargin()">
+                <option value="20px">20</option>
+                <option value="30px">30</option>
+                <option value="40px">40</option>
+                <option value="50px">50</option>
+            </select>
+
             <div id="para" style="text-align: center; width: 70% ; margin-left: 100px; border: 1px black solid; " >
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
